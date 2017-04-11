@@ -1,0 +1,40 @@
+.header {
+  &__line-one{
+
+  }
+  &__wrap{
+    height: 100%;
+    &_text-center{
+      text-align: center;
+    }
+    &_bg-gray{
+      background: #333;
+      color: #fff;
+    }
+    &:before {
+      display: inline-block;
+      height: 100%;
+      vertical-align: middle;
+      content: "";
+    }
+  }
+  &__social-links {
+    display: inline-block;
+    .header__social-link {
+      &:nth-of-type(2) {
+        margin: 0 60px 0 60px;
+      }
+    }
+  }
+  &__line-one{
+    height: 96px;
+  }
+  &__menu{
+    list-style: none;
+    display: inline-block;
+
+  }
+  &__menu-item{
+    display: inline-block;
+  }
+}
