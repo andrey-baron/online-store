@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "ProximaNovaRegular";
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNovaSemibold";
+  src: url("../fonts/ProximaNova-Semibold.eot");
+  src: url("../fonts/ProximaNova-Semibold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
 .no-gutter {
   margin: 0;
 }
@@ -5,7 +19,13 @@
   padding-right: 0;
   padding-left: 0;
 }
+body {
+  font-family: "ProximaNovaRegular";
+}
 
+.header__line-one {
+  font-size: 18px;
+}
 .header__wrap {
   height: 100%;
 }
@@ -34,7 +54,32 @@
 .header__menu {
   list-style: none;
   display: inline-block;
+  margin: 0 40px;
 }
 .header__menu-item {
   display: inline-block;
+}
+.header__menu-item > a {
+  font-size: 18px;
+  color: #fff;
+}
+.header__sign-up {
+  list-style: none;
+  display: inline-block;
+}
+.header__sign-up > a {
+  color: #fff;
+  display: inline-block;
+}
+.header__sign-up .yellow_in {
+  color: #ffe025;
+}
+.header__sign-up .sign-up-splitter {
+  width: 2px;
+  background: #ffffff;
+  height: 14px;
+  display: inline-block;
+}
+.header a {
+  text-decoration: none;
 }

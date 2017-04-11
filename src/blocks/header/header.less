@@ -1,6 +1,6 @@
 .header {
   &__line-one{
-
+    font-size: 18px;
   }
   &__wrap{
     height: 100%;
@@ -32,9 +32,34 @@
   &__menu{
     list-style: none;
     display: inline-block;
-
+    margin: 0 40px;
   }
   &__menu-item{
     display: inline-block;
+
+    >a{
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+  &__sign-up{
+    list-style: none;
+    display: inline-block;
+    >a{
+      color: #fff;
+      display: inline-block;
+    }
+    .yellow_in{
+      color: #ffe025;
+    }
+    .sign-up-splitter{
+      width: 2px;
+      background: #ffffff;
+      height: 14px;
+      display: inline-block;
+    }
+  }
+  a{
+    text-decoration: none;
   }
 }
