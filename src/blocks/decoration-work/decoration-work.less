@@ -1,0 +1,100 @@
+.base-class {
+  height: 100%;
+  float: left;
+}
+
+.decoration-work {
+  height: 576px;
+
+  &__scope-points:extend(.base-class) {
+    background: url("../img/Layer10.png") no-repeat;
+    width: 1152px;
+    position: relative;
+  }
+  &__point {
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    background: #ffe025;
+    border-radius: 25px;
+    &:before {
+      content: "";
+      background: url("../img/plus.png") no-repeat;
+      height: 16px;
+      width: 16px;
+      display: block;
+      margin: 16px auto;
+
+    }
+  }
+  &__answer-question:extend(.base-class) {
+    width: 384px;
+    background: #b3d45f;
+    position: relative;
+  }
+  &__question-head {
+    margin-top: 65px;
+    margin-bottom: 40px;
+    font-family: ProximaNovaSemibold;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__question-text {
+    display: inline-block;
+    padding: 0 60px 0 90px;
+    &:before {
+      display: block;
+      content: "";
+      background: url(../img/question.png) no-repeat;
+      height: 32px;
+      width: 32px;
+      float: left;
+      margin-left: -52px;
+    }
+  }
+  &__question-text + &__question-text {
+    margin-top: 30px;
+  }
+  &__question-wrap-all-link {
+    text-align: center;
+  }
+  &__question-all-link {
+    display: inline-block;
+    margin-top: 75px;
+    text-align: center;
+    color: #56942f;
+    text-decoration: underline;
+  }
+  &__video {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    text-align:center;
+
+  }
+  &__question-head_video-guide:extend(.base-class) {
+    background: #a9c95a;
+  }
+  &__description-video{
+    margin-top: 30px;
+    text-align: center;
+    font-family: ProximaNovaSemibold;
+    font-size: 24px;
+  }
+  &__wrap-video{
+    position: relative;
+  }
+  &__btn-play{
+    position: absolute;
+    display: block;
+    background: url("../img/btn-play.png")no-repeat;
+    vertical-align: middle;
+    width: 54px;
+    height: 78px;
+    top: 50%;
+    left: 50%;
+    margin-left: -27px;
+    margin-top: -39px;
+  }
+}

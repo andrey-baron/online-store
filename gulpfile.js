@@ -3,10 +3,11 @@ var gulp = require('gulp');
 var less = require('gulp-less');
 var path = require('path');
 var concat = require('gulp-concat');
- rename = require('gulp-rename');
+var rename = require('gulp-rename');
 var gulpMinifyCss = require('gulp-minify-css');
 
-var sourcemaps = require('gulp-sourcemaps');
+
+var order = require("gulp-order");
 gulp.task('mytask', function() {
     console.log('Привет, я таск!');
 });
@@ -14,6 +15,10 @@ gulp.task('mytask', function() {
 
 gulp.task('less', function(){ 
     return gulp.src('./src/blocks/**/*.less')
+        .pipe(order([
+            "other.less",
+            "*.less"
+        ]))
         .pipe(less())
         .pipe(concat('main.css'))
         .pipe(gulp.dest('./dist/css'))

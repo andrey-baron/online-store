@@ -5,15 +5,8 @@
   "devDependencies": {
     "gulp-concat": "^2.6.0",
     "gulp-minify-css": "^1.2.4",
-    "gulp-rename": "^1.2.2"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Andrey Baron",
-  "license": "ISC",
-  "main": "gulpfile.js",
-  "dependencies": {
+    "gulp-order": "^1.1.1",
+    "gulp-rename": "^1.2.2",
     "css-loader": "^0.28.0",
     "extract-text-webpack-plugin": "^2.1.0",
     "gulp": "^3.9.1",
@@ -23,6 +16,15 @@
     "less-loader": "^4.0.3",
     "style-loader": "^0.16.1",
     "webpack": "^2.3.3"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrey Baron",
+  "license": "ISC",
+  "main": "gulpfile.js",
+  "dependencies": {
+
   },
   "repository": {
     "type": "git",

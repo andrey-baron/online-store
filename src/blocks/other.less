@@ -12,6 +12,27 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "ProximaNovaExtrabld";
+  src: url("../fonts/ProximaNova-Extrabld.eot");
+  src: url("../fonts/ProximaNova-Extrabld.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNovaBlack";
+  src: url("../fonts/ProximaNovaBlack.eot");
+  src: url("../fonts/ProximaNovaBlack.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "ProximaNovaBold";
+  src: url("../fonts/ProximaNovaBold.eot");
+  src: url("../fonts/ProximaNovaBold.woff") format("woff");
+  font-style: normal;
+  font-weight: normal;
+}
 .no-gutter {
   margin: 0;
 }
@@ -20,6 +41,23 @@
   padding-right: 0;
   padding-left: 0;
 }
+html{
+  margin: 0 auto;
+  width: 1920px;
+
+}
 body{
   font-family: "ProximaNovaRegular";
+  color: #333;
+  font-size: 18px;
+  line-height: 1.25;
+}
+p{
+  margin: 0;
+}
+a{
+  color: #333;
+  &:focus, &:hover {
+    color: #333;
+  }
 }
