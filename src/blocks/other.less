@@ -42,8 +42,8 @@
   padding-left: 0;
 }
 html{
-  margin: 0 auto;
-  width: 1920px;
+  //margin: 0 auto;
+  //width: 1920px;
 
 }
 body{
@@ -60,4 +60,26 @@ a{
   &:focus, &:hover {
     color: #333;
   }
+}
+ol,ul{
+  margin: 0;
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    min-width: 1200px;
+  }
+}
+@media (min-width: 992px)and (max-width: 1199px){
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 768px)and (max-width: 991px){
+.container {
+  width: 750px;
+}
+}
+.container_no-pad{
+  padding: 0;
 }

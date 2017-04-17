@@ -1,4 +1,36 @@
-.home-slider{
+@import "../variable";
+.home-slider-base-height{
   height: 576px;
+}
+.home-slider:extend(.home-slider-base-height){
   background: #666666;
+  &__shipping-wrap:extend(.home-slider-base-height){
+    background: @yellowGreenColor;
+    line-height: 576px;
+    text-align: center;
+  }
+  &__shipping{
+    display: inline-block;
+    vertical-align: middle;
+
+    line-height: normal;
+  }
+  &__shipping-img{
+    background: url("../img/home-shipping.png") no-repeat;
+    width: 120px;
+    height: 60px;
+   margin: 0 auto 25px ;
+  }
+  &__head-title{
+    font-family: ProximaNovaSemibold;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__map:extend(.home-slider-base-height){
+    background: url("../img/slider-map.png");
+    width: 100%;
+    background-size: cover;
+    background-position: center center;
+  }
 }
